@@ -10,8 +10,8 @@ Todos os devidos créditos estão na aba "Créditos", dentro do jogo.
 
 Jogo/site produzido por:
 
-Henrique Stratmann Rampazzo: https://github.com/henriqueSrampazzo
-Mateus Petry: https://github.com/MateusPetry
+Henrique Stratmann Rampazzo: https://github.com/henriqueSrampazzo                                      
+Mateus Petry: https://github.com/MateusPetry                                  
 Matheus Pratto: https://github.com/MatheusPratto
 
 27/03/2019 11:15
