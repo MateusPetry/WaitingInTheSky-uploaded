@@ -1,4 +1,27 @@
 /*========================index======================*/
+.anima {
+  position :relative;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    0%   {top: -10px;}
+	50%  {top: 30px;}
+    100%  {top: -10px;}
+}
+
+@keyframes mysecondmove {
+    0%   {opacity: 0;}
+	50%  {opacity: 1;}
+    100%  {opacity: 0;}
+}
+
+.imagemfundo{
+	width: 100%;
+	max-height: 100%;
+	animation: mysecondmove 10s infinite;
+	position: absolute;
+}
 #fundoindex{
 	background-image: url(img/imgindex.png);
 	background-color: black;

@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-require ("verifica.php");
+require "verifica.php";
 
 ?>
 
@@ -23,6 +23,8 @@ require ("verifica.php");
 
 <body id="fundorecupera">
 
+<img src="css/img/imgindex.png" class="imagemfundo">
+
 	<div>
 
 		<div class="center">
@@ -35,7 +37,7 @@ require ("verifica.php");
 
 	<div class="center">
 
-		<div class="blocoalterar"> 
+		<div class="blocoalterar">
 
 			<form name="formulario" action ="update.php" method ="post" class=" wow animated bounceInDown" >
 
@@ -49,7 +51,7 @@ require ("verifica.php");
 
 				<br> <br>
 
-				<input onclick=" return validaralterar()" class="form-control btn btn-outline-dark" type= "submit" name="Enviar" value ="Enviar"/> 
+				<input onclick=" return validaralterar()" class="form-control btn btn-outline-dark" type= "submit" name="Enviar" value ="Enviar"/>
 
 				<br> <br>
 

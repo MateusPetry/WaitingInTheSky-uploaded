@@ -19,6 +19,8 @@
 
 <body id="fundoranking">
 
+<img src="css/img/imgindex.png" class="imagemfundo">
+
 	<div class="center">
 
 		<div class="texto">
@@ -37,105 +39,126 @@
 
 				<?php
 
-				require_once("config.php");
+require_once "config.php";
 
-				$sql = new Sql();
+$sql = new Sql();
 
-				$query =("SELECT login,score1 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score1 DESC, login ASC");
-				$result = $sql->query( $query );
-				$rows = $result->fetchAll(PDO::FETCH_ASSOC);
+$query = ("SELECT login,score1 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score1 DESC, login ASC");
+$result = $sql->query($query);
+$rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
-				echo "<br>";
-				echo "<div class=resultado1>";
-				echo "<br>";
-				echo "<div class=score1>";
-				echo "<p class = level> Ranking Level 1 </p>";
+echo "<br>";
+echo "<div class=resultado1>";
+echo "<br>";
+echo "<div class=score1>";
+echo "<p class = level> Ranking Level 1 </p>";
 
-				foreach($rows as $item){
+foreach ($rows as $item) {
 
-					echo "<div class=cry>";
-					echo  $item['login']; 
-					echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp"; echo "&nbsp"; echo "&nbsp"; echo "&nbsp";
-					echo  $item['score1']; 
-					echo "<br>";
-				}
+	echo "<div class=cry>";
+	echo $item['login'];
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo $item['score1'];
+	echo "<br>";
+}
 
-				echo "</div>";
-				echo "</div>";
-				echo "</div>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
 
-				?>
+?>
 			</center>
 
 			<center class= "animated fadeInUp">
 
-				<?php  
+				<?php
 
-				echo "<br>";
-				echo "<div class=resultado2>";
-				echo "<br>";
-				echo "<div class=score2>";
-				echo "<p class = level> Ranking Level 2 </p>";
+echo "<br>";
+echo "<div class=resultado2>";
+echo "<br>";
+echo "<div class=score2>";
+echo "<p class = level> Ranking Level 2 </p>";
 
-				$query =("SELECT login,score2 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score2 DESC, login ASC");
-				$result = $sql->query( $query );
-				$rows = $result->fetchAll(PDO::FETCH_ASSOC);
+$query = ("SELECT login,score2 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score2 DESC, login ASC");
+$result = $sql->query($query);
+$rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
+foreach ($rows as $item) {
 
-				foreach($rows as $item){
+	echo "<div class=cry2>";
+	echo $item['login'];
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo $item['score2'];
+	echo "<br>";
+}
 
-					echo "<div class=cry2>";
-					echo  $item['login']; 
-					echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp"; echo "&nbsp"; echo "&nbsp"; echo "&nbsp";
-					echo  $item['score2']; 
-					echo "<br>";
-				}
+echo "</div>";
+echo "</div>";
+echo "</div>";
 
-				echo "</div>";
-				echo "</div>";
-				echo "</div>";
-
-				?>
+?>
 
 			</center>
 
 			<center class= "animated fadeInRight">
 
-				<?php  
+				<?php
 
-				echo "<br>";
-				echo "<div class=resultado3>";
-				echo "<br>";
-				echo "<div class=score3>";
-				echo "<p class = level> Ranking Level 3 </p>";
+echo "<br>";
+echo "<div class=resultado3>";
+echo "<br>";
+echo "<div class=score3>";
+echo "<p class = level> Ranking Level 3 </p>";
 
+$query = ("SELECT login,score3 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score3 DESC, login ASC");
+$result = $sql->query($query);
+$rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
-				$query =("SELECT login,score3 FROM cadastro WHERE nivel = 'Usuario' ORDER BY score3 DESC, login ASC");
-				$result = $sql->query( $query );
-				$rows = $result->fetchAll(PDO::FETCH_ASSOC);
+foreach ($rows as $item) {
 
+	echo "<div class=cry3>";
+	echo $item['login'];
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo "&nbsp";
+	echo $item['score3'];
+	echo "<br>";
+}
 
-				foreach($rows as $item){
+echo "</div>";
+echo "</div>";
+echo "</div>";
 
-					echo "<div class=cry3>";
-					echo  $item['login']; 
-					echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp";echo "&nbsp"; echo "&nbsp"; echo "&nbsp"; echo "&nbsp";
-					echo  $item['score3']; 
-					echo "<br>";
-				}
-
-				echo "</div>";
-				echo "</div>";
-				echo "</div>";
-
-				?>
+?>
 
 			</center>
 
 		</div>
 
-		<br><br> <br>  
-		
+		<br><br> <br>
+
 		<p class=" animated fadeIn"><a class=" btn btn-outline-dark" href = "/index.html" > Página Inicial </a></p>
 		<p class=" animated fadeIn"><a class=" btn btn-outline-dark" href = "/site/jogo.php" > Jogar </a></p>
 
